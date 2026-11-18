@@ -2,9 +2,16 @@
 
 int main(void)
 {
+    char player[50];
     int at_bats;
     int hits;
     double average;
+
+    printf("Enter player name: ");
+    if (scanf("%49s", player) != 1) {
+        printf("Invalid input.\n");
+        return 1;
+    }
 
     printf("Enter at-bats: ");
     if (scanf("%d", &at_bats) != 1) {
@@ -25,7 +32,7 @@ int main(void)
 
     average = (double)hits / at_bats;
 
-    printf("Batting average: %.3f\n", average);
+    printf("%s's batting average: %.3f\n", player, average);
 
     return 0;
 }
