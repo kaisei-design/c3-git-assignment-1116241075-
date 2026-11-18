@@ -1,16 +1,5 @@
 #include <stdio.h>
 
-const char *evaluate_average(double average)
-{
-    if (average >= 0.300) {
-        return "Excellent";
-    }
-    if (average >= 0.250) {
-        return "Good";
-    }
-    return "Keep practicing";
-}
-
 int main(void)
 {
     char player[50];
@@ -44,7 +33,6 @@ int main(void)
     average = (double)hits / at_bats;
 
     printf("%s's batting average: %.3f\n", player, average);
-    printf("Evaluation: %s\n", evaluate_average(average));
 
     return 0;
 }
