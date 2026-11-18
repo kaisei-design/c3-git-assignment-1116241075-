@@ -9,3 +9,5 @@ gcc batting_average.c -o batting_average
 ## 実行
 
 ./batting_average
+
+開発中の一時メモ：評価機能を確認する。
